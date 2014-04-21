@@ -8,7 +8,6 @@ def mix_number(a):
     c = 0
     for i in ROWS:
         for j in COLUMNS:
-            
             mix.append(str(i)+j)
     a = a.upper()
    
