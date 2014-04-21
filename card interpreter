@@ -1,0 +1,25 @@
+ROWS = [1,2,3,4,5,6,7,8]
+COLUMNS = ['A','B','C','D','E','F','G','H','I','J']
+NUMBERS =[20,18,66,43,88,74,62,54,26,74,55,98,71,13,42,82,47,38,98,86,52,81,4,23,42,21,10,33,51,39,2,62,50,76,45,54,27,1,99,77,58,31,88,47,42,32,90,65,17,68,24,90,47,88,46,41,73,81,30,20,85,68,95,81,73,25,58,75,8,81,99,97,96,8,54,72,13,27,70,55]
+
+def mix_number(a):
+    mix = []
+    complete = []
+    c = 0
+    for i in ROWS:
+        for j in COLUMNS:
+            
+            mix.append(str(i)+j)
+    a = a.upper()
+   
+    cut = [a[0:2],a[2:4],a[4:6]]    
+    
+    search = cut
+    for i in cut:
+        complete.append(NUMBERS[mix.index(i)])
+    
+    
+    return complete
+        
+    
+print mix_number(input('Valores'))    
